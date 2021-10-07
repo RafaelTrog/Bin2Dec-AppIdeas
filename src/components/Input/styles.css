@@ -1,0 +1,55 @@
+.Input {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.Input > input {
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    height: 40px;
+    border: 2px solid #fff;
+    background-color: #ffffff70;
+    border-radius: 5px;
+    font-size: 14pt;
+    padding: 0 10px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.Input > input:disabled {
+    background-color: #ffffff20;
+    border-color: #ffffff80;
+}
+
+.placeholder[isDisabled="true"] {
+    color: #ffffff80 !important;
+}
+
+.Input > .placeholder {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.placeholder-top {
+    top: 0 !important;
+    left: 0px !important;
+    font-size: 10pt !important;
+    color: #fff !important;
+}
+
+.Input-error {
+    color: #ff0000;
+    font-size: 10pt;
+    text-shadow: 0 0 1px #ff0000;
+}
